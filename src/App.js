@@ -20,9 +20,9 @@ function App() {
 
   const addItems = (event) => {
     if (event.key === 'Enter') {
-      const newItem = event.target.value.trim();
-      if (newItem !== '') {
-        setItems((prevState) => [...prevState, newItem]);
+      const nItem = event.target.value.trim();
+      if (nItem !== '') {
+        setItems((prevState) => [...prevState, nItem]);
         event.target.value = '';
       }
     }
