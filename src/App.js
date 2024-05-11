@@ -22,7 +22,7 @@ function App() {
     if (event.key === 'Enter') {
       const newItem = event.target.value.trim();
       if (newItem !== '') {
-        setItems([...items, newItem]);
+        setItems((prevState) => [...prevState, newItem]);
         event.target.value = '';
       }
     }
